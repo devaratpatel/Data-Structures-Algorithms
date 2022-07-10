@@ -14,6 +14,7 @@ a.next = b;
 b.next = c;
 c.next = d;
 
+// Iterative solution
 const printLinkedList = (head) => {
   let current = head;
   while (current != null) {
@@ -23,7 +24,7 @@ const printLinkedList = (head) => {
   }
 };
 
-// Recursion solution
+// Recursive solution
 const recursionList = (head) => {
   if (head === null) return;
   console.log(head.val);
@@ -31,4 +32,4 @@ const recursionList = (head) => {
 };
 
 printLinkedList(a);
-recursionList(a);
+// recursionList(a);
