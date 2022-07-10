@@ -31,7 +31,6 @@ const recursiveGetNodeValue = (head, index) => {
 //Iterative Solution
 
 const getNodeValue = (head, index) => {
-  if (head === null) return null;
   let count = 0;
   let current = head;
   while (current !== null) {
@@ -39,6 +38,7 @@ const getNodeValue = (head, index) => {
     count++;
     current = current.next;
   }
+  return null;
 };
 
 console.log(recursiveGetNodeValue(a, 7));
