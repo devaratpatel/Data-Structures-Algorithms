@@ -23,4 +23,12 @@ const printLinkedList = (head) => {
   }
 };
 
+// Recursion solution
+const recursionList = (head) => {
+  if (head === null) return;
+  console.log(head.val);
+  recursionList(head.next);
+};
+
 printLinkedList(a);
+recursionList(a);
