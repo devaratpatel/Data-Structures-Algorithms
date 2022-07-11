@@ -42,4 +42,5 @@ const getNodeValue = (head, index) => {
 };
 
 console.log(recursiveGetNodeValue(a, 7));
+console.log('<---------->');
 console.log(getNodeValue(a, 7));

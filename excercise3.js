@@ -38,4 +38,5 @@ const recursiveListFind = (head, target) => {
   return recursiveListFind(head.next, target);
 };
 console.log(linkedListFind(a, 'g'));
+console.log('<---------->');
 console.log(recursiveListFind(a, 'g'));

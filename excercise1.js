@@ -48,4 +48,5 @@ const helperFunc = (head, array) => {
 };
 
 console.log(linkedListValues(a));
+console.log('<---------->');
 console.log(recursionListValues(a));

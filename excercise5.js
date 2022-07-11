@@ -50,5 +50,6 @@ const recursiveReverseLinkedList = (head, prev = null) => {
   return recursiveReverseLinkedList(next, head);
 };
 
-console.log(recursiveReverseLinkedList(a));
 console.log(reverseLinkedList(a));
+console.log('<---------->');
+console.log(recursiveReverseLinkedList(a));

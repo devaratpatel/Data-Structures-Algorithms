@@ -37,4 +37,5 @@ const recursionSumList = (head) => {
 };
 
 console.log(sumList(a));
+console.log('<---------->');
 console.log(recursionSumList(a));

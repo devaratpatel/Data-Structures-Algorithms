@@ -19,7 +19,6 @@ const printLinkedList = (head) => {
   let current = head;
   while (current != null) {
     console.log(current.val);
-    current.next;
     current = current.next;
   }
 };
@@ -32,4 +31,5 @@ const recursionList = (head) => {
 };
 
 printLinkedList(a);
-// recursionList(a);
+console.log('<---------->');
+recursionList(a);
