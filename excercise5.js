@@ -41,4 +41,14 @@ const reverseLinkedList = (head) => {
   return prev;
 };
 
+//Recursive Solution
+
+const recursiveReverseLinkedList = (head, prev = null) => {
+  if (head === null) return prev;
+  const next = head.next;
+  head.next = prev;
+  return recursiveReverseLinkedList(next, head);
+};
+
+console.log(recursiveReverseLinkedList(a));
 console.log(reverseLinkedList(a));
