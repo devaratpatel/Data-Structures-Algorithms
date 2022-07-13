@@ -1,3 +1,5 @@
-# linkedList_practice
+# Data Structures & Algorithms for Technical Interviews
 
-Linked Lists for Technical Interviews
+<div>Linked Lists <div/>
+<div>Binary Trees <div/>
+<div>Graphs<div/>
