@@ -29,6 +29,7 @@ b.left = d;
 b.right = e;
 c.right = f;
 
+// Iterative Approach
 const depthFirstValues = (root) => {
   if (root === null) return [];
 
@@ -44,5 +45,16 @@ const depthFirstValues = (root) => {
   return result;
 };
 
+// Recursive Approach
+
+const recursiveFunc = (root) => {
+  if (root === null) return [];
+
+  const leftValues = recursiveFunc(root.left); // b, d, e
+  const rightValues = recursiveFunc(root.right); // c, f
+  return [root.val, ...leftValues, ...rightValues];
+};
+
 console.log(depthFirstValues(a));
+console.log(recursiveFunc(a));
 //    -> ['a', 'b', 'd', 'e', 'c', 'f']
